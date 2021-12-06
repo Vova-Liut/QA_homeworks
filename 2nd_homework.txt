@@ -1,0 +1,13 @@
+touch QA_2homework_git.txt
+vim file.name
+insert 
+....
+esc :wq
+git add . or git add file.name
+git status //check status 
+git commit -m "2nd homework for git"
+git push
+
+or 
+git commit -am "2nd homework for git"
+git push
