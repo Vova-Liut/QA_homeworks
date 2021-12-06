@@ -1,0 +1,52 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir My_files
+3) Зайти в папку - cd folder.name (foldername/my__files/new_files)
+4) Создать 3 папки - mkdir G_1 G_2 G_3
+5) Зайти в любоую папку - cd G_1
+6) Создать 5 файлов (3 txt, 2 json) - touch 1.txt 2.txt 3.txt 4.json 5.json
+7) Создать 3 папки - mkdir F_1 F_2 F_3
+8. Вывести список содержимого папки - ls(список) ls -la (список с изменениями) 
+9) + Открыть любой txt файл - vim 1.txt
+10) + написать туда что-нибудь, любой текст - I(insert) name “Vova”
+11) + сохранить и выйти - esc, :wq enter
+12) Выйти из папки на уровень выше - cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку - (в папке с файлами) mv 1.txt 2.txt ~/Downloads/new111/Big_1/G_2
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку - cp 1.txt 2.txt /G_1
+15) Найти файл по имени - find . -name(iname - регистр) “filename.txt” 
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - grep -i (регистр) “keyword” downloads/new/file.name - выводит строку с уромининиев keyword
+17) вывести несколько первых строк из текстового файла (cat students.txt | sed -n 3,5p выводит строки из фала, где n номера строк) head -n2 (кол-во строк)
+18) вывести несколько последних строк из текстового файла tail - n2 (кол-во строк) file.name
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less file.name (в программе / или ? для поиска q для выхода)
+20) вывести дату и время date, cal
+=========
+
+curl http://162.55.220.72:5005/terminal-hw-request
+
+{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+user@MacProL ~>
+
+ curl "http://162.55.220.72:5005/get_method?name=Vadim&age=32"
+
+["Vadim","32"]
+user@MacProL ~> 
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+
+#1/bin/fish
+cd /Users/user/downloads/new111/group_25/dir_1
+mkdir x_1 x_2 x_3
+cd /Users/user/downloads/new111/group_25/dir_1/x_1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir y_1 y_2 y_3
+ls
+cd /Users/user/downloads/new111/group_25/dir_1/x_1
+mv x_1 x_2
+
+
+
+
